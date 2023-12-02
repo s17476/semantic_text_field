@@ -29,8 +29,12 @@ class _SemanticTextFieldState extends State<SemanticTextField> {
     }
 
     // Add translations here
-    final textFieldLabel = 'Pole textowe';
+
+    // Textfield
+    final textFieldLabel = 'Pole tekstowe';
+    // Edition
     final editingLabel = 'Edycja';
+    // Double tap to edit
     final doubleTapLabel = 'Stuknij dwukrotnie aby edytować';
 
     var label = _textEditingController.text.isEmpty
