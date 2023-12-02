@@ -59,7 +59,9 @@ class _SemanticTextFieldState extends State<SemanticTextField> {
 
   @override
   void dispose() {
-    _textEditingController.dispose();
+    if (widget.controller == null) {
+      _textEditingController.dispose();
+    }
     _focusNode.dispose();
     super.dispose();
   }
